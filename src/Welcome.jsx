@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { TypeWriter, Button } from "react-simplicity-lib";
-const installCode = `npm i react-simplicity`;
+const installCode = `npm i react-simplicity-lib`;
 const Welcome = () => {
   const [isCompleteHeading, setIsCompleteHeading] = useState(false);
   const [isCompleteMessage, setIsCompleteMessage] = useState(false);
