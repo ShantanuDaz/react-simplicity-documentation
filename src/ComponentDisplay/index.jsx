@@ -3,6 +3,9 @@ import HoverCardDisplay from "./CardDisplay/HoverCardDisplay";
 import ToggleDisplay from "./ToggleDisplay/ToggleDisplay";
 import TypeWriterDisplay from "./TypeWriterDisplay/TypeWriterDisplay";
 import ModalDisplay from "./ModalDisplay/ModalDisplay";
+import ButtonDisplay from "./ButtonDisplay/ButtonDisplay";
+import TableDisplay from "./TableDisplay/TableDisplay";
+import TabsDisplay from "./TabsDisplay/TabsDisplay";
 import { useState } from "react";
 const Components = [
   {
@@ -17,10 +20,22 @@ const Components = [
     title: "Type Writer",
     Component: TypeWriterDisplay,
   },
+  {
+    title: "Modal",
+    Component: ModalDisplay,
+  },
   // {
-  //   title: "Modal",
-  //   Component: ModalDisplay,
+  //   title: "Button",
+  //   Component: ButtonDisplay,
   // },
+  {
+    title: "Table",
+    Component: TableDisplay,
+  },
+  {
+    title: "Tabs",
+    Component: TabsDisplay,
+  },
 ];
 const DisplayComponents = () => {
   const [isOpen, setIsOpen] = useState("");
