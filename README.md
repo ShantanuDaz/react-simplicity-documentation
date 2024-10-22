@@ -1,6 +1,10 @@
-# React Simplicity Library - Documentation Website 📖
+# React Simplicity Library - Documentation 📖
 
 This is the official documentation website for [**react-simplicity-lib**](https://react-simplicity.netlify.app/). The site provides detailed information about each component, including usage examples, props descriptions, and live previews.
+
+## **Note**
+
+This library is built entirely with **React JS, using only HTML, CSS, and JavaScript**, making it extremely **lightweight** and **lightning-fast ⚡**
 
 ## **Website Overview**
 
@@ -14,13 +18,9 @@ The website serves as a comprehensive guide to all the components provided by th
 - 🎨 **Interactive UI:** Well-organized sections with easy navigation.
 - 📚 **Code Snippets:** Copy-paste ready examples.
 
-## **License**
+<!-- ## **License**
 
-This website and the library are licensed under the MIT License. See the [LICENSE](./LICENSE) file for more information.
-
-## **Keywords**
-
-react, react-components, ui-library, documentation-site, frontend-docs, live-examples, open-source
+This website and the library are licensed under the MIT License. See the [LICENSE](./LICENSE) file for more information. -->
 
 ## **Author**
 

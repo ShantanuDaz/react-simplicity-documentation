@@ -10,8 +10,8 @@ function App() {
   return (
     <Tabs Tabs={TabsNames}>
       <Tab className="tab-display">😊</Tab>
-      <Tab className="tab-display">😔</Tab>
-      <Tab className="tab-display">❤️</Tab>
+      <Tab className="tab-display">😢</Tab>
+      <Tab className="tab-display">💙</Tab>
     </Tabs>
   );
 }
@@ -73,7 +73,8 @@ const rows = [
     name: "isNativeMomentDisable",
     defaultValue: "false",
     values: ["Boolean"],
-    function: "Disables native tab switching if set to true.",
+    function:
+      "Disables native tab switching when set to true. This means clicking a tab won't change its position; instead, you’ll need to update the value prop with a new index to switch tabs.",
   },
 ];
 
