@@ -35,7 +35,7 @@ const TabsDisplay = ({ isOpen, isClosed = () => {}, isAutomatic = true }) => {
       </Tabs>
       <DocTemplate isOpen={isOpen}>
         <DocHeader title="Tabs" onClick={() => isClosed()} />
-        <DocComponentDisplay>
+        <DocComponentDisplay style={{ height: "40vh" }}>
           <TabsDisplay isAutomatic={false} />
         </DocComponentDisplay>
         <DocComponentDocumentation>
