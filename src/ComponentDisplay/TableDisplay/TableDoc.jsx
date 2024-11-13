@@ -24,6 +24,10 @@ function App() {
         rows={rows} 
         className="custom-table" 
         style={{ border: "1px solid black", width: "50%", margin: "auto" }} 
+        isPagination={true}
+        pageSize={5}
+        pageMenuPlacement="end"
+        isSerialized={true}
       />
     </div>
   );
@@ -53,27 +57,54 @@ const columns = [
 const rows = [
   {
     name: "columns",
-    defaultValue: '[ { name: "", field: "" } ]',
+    defaultValue: "Required",
     values: "Array of Objects",
-    function: "Defines the table's column headers and associated row fields.",
+    function:
+      "Defines column headers and mappings to row fields. Each object should have `name` and `field` properties.",
   },
   {
     name: "rows",
-    defaultValue: '[ { columnName: "value" } ]',
+    defaultValue: "Required",
     values: "Array of Objects",
-    function: "Contains the data to be displayed in the table.",
+    function:
+      "Contains the data for each row. Each object should match the `field` keys defined in columns.",
   },
   {
     name: "className",
     defaultValue: '""',
     values: "String",
-    function: "Adds custom CSS classes to the table.",
+    function: "Adds additional CSS classes to style the table.",
   },
   {
     name: "style",
     defaultValue: "{}",
     values: "CSS Object",
-    function: "Inline styles to customize the table's appearance.",
+    function: "Applies custom inline styles to the table.",
+  },
+  {
+    name: "isPagination",
+    defaultValue: "false",
+    values: "Boolean",
+    function: "Enables pagination for the table if set to true.",
+  },
+  {
+    name: "pageSize",
+    defaultValue: "10",
+    values: "Number",
+    function:
+      "Sets the number of rows displayed per page when pagination is enabled.",
+  },
+  {
+    name: "pageMenuPlacement",
+    defaultValue: '"center"',
+    values: '"center" | "start" | "end"',
+    function: "Aligns pagination controls on the screen.",
+  },
+  {
+    name: "isSerialized",
+    defaultValue: "false",
+    values: "Boolean",
+    function: "Displays row numbers in the table when set to true.",
   },
 ];
 

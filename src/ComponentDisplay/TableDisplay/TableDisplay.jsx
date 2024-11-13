@@ -26,12 +26,58 @@ const rows = [
   { name: "Charlie", superpower: "Accidentally funny", snack: "Gummy Bears" },
   { name: "Diana", superpower: "Sleeping through alarms", snack: "Popcorn" },
   { name: "Eve", superpower: "Untangling earphones", snack: "Sour Patch Kids" },
+  {
+    name: "Alice",
+    superpower: "Invisible when nobody's looking",
+    snack: "Choco Chip Cookies",
+  },
+  {
+    name: "Bob",
+    superpower: "Overthinking everything",
+    snack: "Salted Pretzels",
+  },
+  { name: "Charlie", superpower: "Accidentally funny", snack: "Gummy Bears" },
+  { name: "Diana", superpower: "Sleeping through alarms", snack: "Popcorn" },
+  { name: "Eve", superpower: "Untangling earphones", snack: "Sour Patch Kids" },
+  {
+    name: "Alice",
+    superpower: "Invisible when nobody's looking",
+    snack: "Choco Chip Cookies",
+  },
+  {
+    name: "Bob",
+    superpower: "Overthinking everything",
+    snack: "Salted Pretzels",
+  },
+  { name: "Charlie", superpower: "Accidentally funny", snack: "Gummy Bears" },
+  { name: "Diana", superpower: "Sleeping through alarms", snack: "Popcorn" },
+  { name: "Eve", superpower: "Untangling earphones", snack: "Sour Patch Kids" },
+  {
+    name: "Alice",
+    superpower: "Invisible when nobody's looking",
+    snack: "Choco Chip Cookies",
+  },
+  {
+    name: "Bob",
+    superpower: "Overthinking everything",
+    snack: "Salted Pretzels",
+  },
+  { name: "Charlie", superpower: "Accidentally funny", snack: "Gummy Bears" },
+  { name: "Diana", superpower: "Sleeping through alarms", snack: "Popcorn" },
+  { name: "Eve", superpower: "Untangling earphones", snack: "Sour Patch Kids" },
 ];
 
 const TableDisplay = ({ isOpen, isClosed = () => {} }) => {
   return (
     <div style={{ padding: "10px" }}>
-      <Table columns={columns} rows={rows} />
+      <Table
+        columns={columns}
+        rows={rows}
+        isPagination={true}
+        pageSize={5}
+        pageMenuPlacement="center"
+        isSerialized={true}
+      />
       <DocTemplate isOpen={isOpen}>
         <DocHeader title="Table" onClick={() => isClosed()} />
         <DocComponentDisplay>
